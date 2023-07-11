@@ -1,5 +1,6 @@
 require('apostrophe')({
   shortName: 'menu-cms',
+  nestedModuleSubdirs: true,
   modules: {
     '@apostrophecms/rich-text-widget': {
       options: {
@@ -19,6 +20,10 @@ require('apostrophe')({
     // `asset` supports the project's webpack build for client-side assets.
     asset: {},
     // The project's first custom page type.
-    'default-page': {}
+    'default-page': {},
+    dish: {},
+    menu: {},
+    'menu-widget': {},
+    'menu-page': {}
   }
 });
